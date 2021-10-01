@@ -1,0 +1,17 @@
+﻿
+    .GDinfo a {
+        color: #4e4531;
+        text-decoration: underline;
+        
+    }
+    
+    @media (max-width: 575.99px) {
+        .swal2-popup {
+        
+          flex-direction: column !important;
+          
+        }
+        .swal2-content {
+          width: 90% !important;
+        }
+        }

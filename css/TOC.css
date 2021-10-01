@@ -1,0 +1,180 @@
+/* 線上探索  */
+/*surface duo tablet*/
+@media (width: 720px) and (height: 540px) { #subNav {
+  -webkit-box-pack: center !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+}
+}
+@media (width: 540px) and (height: 720px) {
+  #subNav {
+    -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+      justify-content: center !important;
+  }
+  }
+
+.list-sec > section:nth-child(odd) {
+  background-color: white;
+}
+@media (min-width: 1440px) and (max-width: 1679.98px) {
+  .list-sec > section > figure
+   {
+    padding-right: 0% !important;
+    padding-left: 10rem !important;
+    transition: 0.3s linear;
+  }
+
+ 
+}
+@media (min-width: 1680px) and (max-width: 1799.98px) {
+  .list-sec > section > figure
+   {
+    padding-right: 0% !important;
+    padding-left: 5rem !important;
+    transition: 0.3s linear;
+  }
+
+ 
+}
+@media (min-width: 2000px) {
+  .list-bullet.show {
+    position: fixed;
+    margin-left: auto;
+    top: 30%;
+    left: 5vw !important;
+    z-index: 99999999;
+    opacity: 1;
+    transition: 0.3s linear;
+  }
+  .list-bullet {
+    position: fixed;
+    margin-left: auto;
+    top: 30%;
+    left: 4vw !important;
+    z-index: 99999999;
+    opacity: 0;
+    transition: 0.7s linear;
+  }
+ 
+ 
+}
+.list-bullet.show {
+  position: fixed;
+  margin-left: auto;
+  top: 30%;
+  left: 3vw;
+  z-index: 99999999;
+  opacity: 1;
+  transition: 0.3s linear;
+}
+.list-bullet {
+  position: fixed;
+  margin-left: auto;
+  top: 30%;
+  left: 2vw;
+  z-index: 99999999;
+  opacity: 0;
+  transition: 0.7s linear;
+}
+
+@media (max-width: 1439.98px) {
+  .list-bullet {
+    position: fixed;
+    margin-left: auto;
+    top: 30%;
+    left: 2vw;
+    z-index: 99999999;
+    display: none;
+    transition: 0.3s linear;
+  }
+  .map {
+    position: fixed;
+    margin-left: 15px;
+    bottom: 100px;
+    z-index: 99999999;
+    transition: 1s linear;
+    width: 160px;
+    display: none;
+  }
+}
+.list-bullet ul {
+  border-right: 1px solid #9e866b;
+  direction: rtl;
+  margin-right: 50%;
+}
+.list-bullet ul li {
+  width: 10px;
+  height: 10px;
+  position: relative;
+  background-color: #88745d;
+  margin-bottom: 18px;
+  list-style-type: none;
+  margin-left: 0;
+  cursor: pointer;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  border: 1px solid #88745d;
+  left: 5px;
+}
+.list-bullet ul li:focus {
+  width: 10px;
+  height: 10px;
+  position: relative;
+  background-color: #fff !important;
+  border: 1px solid #443523;
+  margin-bottom: 18px;
+  list-style-type: none;
+  margin-left: 0;
+  cursor: pointer;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+
+  left: 5px;
+}
+.list-bullet ul li span {
+  position: relative;
+  padding-right: 20px;
+  bottom: 12px;
+  color: #88745d;
+}
+.hollow {
+  background-color: #fff !important;
+  border: 1px solid #443523;
+}
+
+.map.show {
+  position: relative;
+  left: 0;
+ 
+  z-index: 99999999;
+  transition: 0.7s ease-out;
+  width: 150px;
+  opacity: 1;
+  bottom: 0;
+  padding-top: 10px;
+}
+.map {
+  position: relative;
+  left: 1rem;
+  z-index: 99999999;
+  transition: 0.3s ease-out;
+  width: 150px;
+  opacity: 0;
+  bottom: 0;
+  padding-top: 10px;
+}
+.map > section {
+  display: none !important;
+  transition: 1s linear;
+}
+.map > section.read {
+  display: block !important;
+  transition: 1s linear;
+}
+
+.list-bullet ul li:last-child {
+  margin-bottom: 0px;
+}

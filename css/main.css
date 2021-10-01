@@ -1,0 +1,288 @@
+/*首頁主圖視差與文案樣式*/
+.contents {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  z-index: 10;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+@media all and (min-width: 1025px) {
+  .contents {
+    font-size: 14px;
+    font-size: 0.875rem;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .contents {
+    font-size: 14px;
+    font-size: 0.875rem;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .contents {
+    font-size: 12px;
+    font-size: 0.75rem;
+  }
+}
+
+@media all and (max-width: 767px) and (max-width: 414px) {
+  .contents {
+    font-size: 3.75vw;
+  }
+}
+
+@media all and (max-width: 767px) and (min-width: 415px) {
+  .contents {
+    font-size: 15.525px;
+  }
+}
+
+.contents.is-fixed {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+main {
+  overflow: hidden;
+}
+
+.sec-bg-light {
+  background-image: radial-gradient(
+    circle at 8% 10%,
+    var(--beige),
+    #e1d7ca 97%
+  );
+}
+
+header {
+  background-image: none;
+  height: 100vh !important;
+}
+
+
+@media only screen and (max-width: 575.99px) {
+  header {
+      height: 100vh !important;
+      background-image: url(img/mobile_bg.jpg);
+  }
+}
+
+.header-bg {
+  width: 100vw;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: bottom 50% right 50%;
+  opacity: 0.8;
+}
+
+.header__in {
+  opacity: 1;
+  transition: all 1s ease-out;
+}
+
+.header__in.fade {
+  opacity: 0;
+  transition: all 1s ease-out;
+}
+
+.header__in > h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 2px;
+}
+
+.header__in > p {
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+@media (max-width: 575.98px) {
+  .header__in > h1 {
+    font-size: 1.875rem;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 2px;
+  }
+
+  .header__in > p {
+    font-size: 1rem;
+    font-weight: 200;
+    line-height: 1.2;
+  }
+}
+
+.header-bg-mobile {
+  width: 100vw;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+@media all and (max-width: 450px) and (min-height: 750px) {
+
+  .header-bg-mobile {
+    width: auto;
+    height: 100vh;
+    
+  }
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  min-height: 100vh;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+
+.header-bg.is-hidden {
+  display: none;
+}
+
+.header {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+
+@media all and (max-width: 767px) {
+  .header {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
+
+.header__title {
+  line-height: 1.1;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+@media all and (min-width: 1367px) {
+  .header__title {
+    font-size: 3rem;
+  }
+}
+
+@media all and (min-width: 1025px) and (max-width: 1366px) {
+  .header__title {
+    font-size: 3.5vw;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .header__title {
+    font-size: 3.5vw;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .header__title {
+    font-size: 1.68rem;
+  }
+}
+
+.header__excerpt {
+  margin-top: 0;
+  margin-bottom: 2.5rem;
+}
+
+@media all and (min-width: 1025px) {
+  .header__excerpt {
+    font-size: 0.875rem;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .header__excerpt {
+    font-size: 0.875rem;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .header__excerpt {
+    font-size: 0.75rem;
+    background-image: none;
+  }
+}
+
+@media all and (max-width: 767px) and (max-width: 414px) {
+  .header__excerpt {
+    font-size: 3.75vw;
+  }
+}
+
+@media all and (max-width: 767px) and (min-width: 415px) {
+  .header__excerpt {
+    font-size: 1rem;
+  }
+}
+
+.header__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+/*************** 立即預約 *****************/
+
+
+a.btn-booking {
+  border: 2px solid #f4be6c;
+  width: 160px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  transition: all 200ms cubic-bezier(0.25, 0.75, 0.5, 1);
+  color: #fff;
+}
+a.btn-booking i {
+  line-height: 2;
+}
+a.btn-booking:after {
+  content: "";
+  position: absolute;
+  transition: all 250ms ease-in-out;
+  width: 0;
+  right: 0%;
+  bottom: 0;
+  height: 100%;
+  background: #f4be6c;
+  z-index: -1;
+}
+a.btn-booking:hover, a.btn-booking.hover {
+  color: #292827;
+}
+a.btn-booking:hover:after, a.btn-booking.hover:after {
+  width: 100%;
+  right: auto;
+  left: 0;
+}
